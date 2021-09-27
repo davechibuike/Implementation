@@ -1,0 +1,28 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "env-cmd -f ./config/prod.env nodemon src/server.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon src/server.js",
+    "test": "env-cmd -f ./config/test.env jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "jest": "^27.2.2",
+    "supertest": "^6.1.6"
+  }
+}
